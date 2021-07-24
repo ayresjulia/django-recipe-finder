@@ -3,8 +3,20 @@
 {% block content %}
   <h1 class='title'>Thank you, {{customer.first_name}}!</h1>
   <div class='container'>
-    
+    {% if cust_allrg %}
+      <p class='form-text'>we have noted your allergies for <b>{{cust_allrg}}</b>. check out our recipe recommendations below: </p>
+    {% else %}
+    <p class='form-text'>you have no listed allergies in your profile. check out our recipe recommendations below: </p>
+    {% endif %}
 
+  <ul class='recipe-list'>
+    {% for recipe in filtered_recipes %}
+    <li>{{recipe.name}}</li>
+    {% endfor %}
+  </ul>
+  <div class="form-group pt-4">
+    <a href='/' class="btn btn-outline-primary" type="submit">Back to Home page</a>
+  </div>
 
   </div>
   {% endblock content %}
