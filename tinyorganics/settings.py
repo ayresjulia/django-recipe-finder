@@ -1,7 +1,7 @@
 """Django settings for tinyorganics project."""
 
 import os
-# from .secrets import SECRET_KEY
+from .secrets import PASSWORD
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -10,10 +10,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = os.environ['SECRET_KEY']
-
-# SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ALLOWED_HOSTS = ['0.0.0.0', 'localhost',
@@ -76,7 +72,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd7tjligshd71so',
         'USER': 'toxufhkmoncpdj',
-        'PASSWORD': 'fda65a15aa0e5c98effff069981791e8e8ecc3de7bd9087dc57d97f0e4a46766',
+        'PASSWORD': PASSWORD,
         'HOST': 'ec2-52-72-125-94.compute-1.amazonaws.com',
         'PORT': '5432',
     }

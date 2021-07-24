@@ -1,5 +1,9 @@
 # Python/Django recipe finder
 
+## :cloud: Deployed on Heroku
+
+[tiny-recipe-finder.herokuapp.com](http://tiny-recipe-finder.herokuapp.com/)
+
 ![homepage_gif](./recipes/static/recipes/homepage.gif)
 
 ## :bulb: Description
