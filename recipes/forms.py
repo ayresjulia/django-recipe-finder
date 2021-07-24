@@ -9,4 +9,4 @@ class RecipeForm(forms.Form):
         label="child's first name", max_length=50)
     child_last_name = forms.CharField(label="child's last name", max_length=50)
     allergies = forms.CharField(
-        label='choose allergies(if applicable)', 'max_length=50')
+        label='choose allergies(if applicable)', max_length=50)
