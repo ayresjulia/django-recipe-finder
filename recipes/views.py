@@ -7,6 +7,8 @@ import re
 
 RECIPE_BASE_URL = "https://60f5adf918254c00176dffc8.mockapi.io/api/v1/recipes/"
 
+# function for home page which shows RecipeForm, saves info to db and redirects to thank you page
+
 
 def home(request):
     if request.method == "POST":
@@ -26,6 +28,8 @@ def home(request):
     else:
         form = RecipeForm()
     return render(request, 'recipes/home.html', {'form': form})
+
+# function for thankyou page which filters recipes according to customer allergies and saved recipes to db
 
 
 def recipe_list(request, id):

@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import Customer
 
-# Register your models here.
+# TEST-admin username: 'admin', password: 'password'
+
+admin.site.register(Customer)

@@ -1,5 +1,7 @@
 from django.db import models
 
+# Customer model: recipes are not included in the initial RecipeForm, but added to db after form submission
+
 
 class Customer(models.Model):
     first_name = models.CharField(max_length=50)
